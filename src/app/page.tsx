@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div className="flex flex-col items-center h-screen p-6 text-center dark:bg-slate-900 dark:text-slate-50 bg-slate-50 text-slate-900">
+    <div className="flex h-screen flex-col items-center bg-slate-50 p-6 text-center text-slate-900 dark:bg-slate-900 dark:text-slate-50">
       <div className="max-w-2xl">
-        <h1 className="text-3xl font-bold sm:text-5xl text-slate-900text-center">
+        <h1 className="text-slate-900text-center text-3xl font-bold sm:text-5xl">
           Hello world
         </h1>
 
@@ -13,10 +13,10 @@ export default function Home() {
           nobis fuga.
         </p>
 
-        <button className="px-4 py-2 mt-4 font-medium text-white rounded-md bg-sky-600 dark:bg-sky-400 text-md dark:text-sky-950 enabled:hover:bg-blue-950 disabled:opacity-60 disabled:cursor-not-allowed">
+        <button className="text-md mt-4 rounded-md bg-sky-600 px-4 py-2 font-medium text-white enabled:hover:bg-blue-950 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-sky-400 dark:text-sky-950">
           Sign in
         </button>
       </div>
     </div>
-  );
+  )
 }
