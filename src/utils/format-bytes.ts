@@ -5,7 +5,7 @@ export function formatBytes(bytes: number) {
   let unitIndex = 0
 
   while (value >= 1024 && unitIndex < units.length - 1) {
-    value /= 1024
+    value /= 1024 // value = value / 1024
     unitIndex++
   }
 
