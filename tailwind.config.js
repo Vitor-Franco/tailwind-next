@@ -18,6 +18,35 @@ module.exports = {
           25: '#FCFAFF',
         },
       },
+
+      animation: {
+        slideDownAndFade:
+          'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+        // slideUpAndFade: 'slideUpAndFade 3s linear',
+      },
+
+      keyframes: {
+        slideDownAndFade: {
+          from: {
+            opacity: 0,
+            transform: 'translateY(-2px)',
+          },
+          to: {
+            opacity: 1,
+            transform: 'translateY(0)',
+          },
+        },
+        // slideUpAndFade: {
+        //   from: {
+        //     opacity: 1,
+        //     transform: 'translateY(0)',
+        //   },
+        //   to: {
+        //     opacity: 0,
+        //     transform: 'translateY(-1rem)',
+        //   },
+        // },
+      },
     },
   },
   plugins: [],
